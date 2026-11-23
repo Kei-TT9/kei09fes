@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tapia Terron Keira Briseida 5E</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/musica.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Festival 2026</div>
+
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#entradas">Entradas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- INICIO -->
+        <section id="hero">
+            <h1>Festival de Verano 2026</h1>
+            <p>El evento musical más esperado del año</p>
+
+            <button class="cta-button" onclick="location.href='#entradas'">
+                Comprar entradas
+            </button>
+        </section>
+
+        <!-- ARTISTAS -->
+        <section id="artistas">
+
+            <h2>Artistas destacados</h2>
+
+            <div class="artistas-grid">
+
+                <!-- LANA DEL REY -->
+                <div class="artista-card">
+
+                    <img src="img/artista1.jpg" alt="Lana Del Rey">
+
+                    <h3>Lana Del Rey</h3>
+                    <p>Pop alternativo</p>
+
+                    <div class="info-concierto">
+                        <h4>Próximo concierto</h4>
+                        <p>Fecha: 15 de diciembre de 2026</p>
+                        <p>Lugar: Ciudad de México</p>
+                        <p>Precio: $1,500 - $3,500 MXN</p>
+                    </div>
+
+                </div>
+
+                <!-- DUA LIPA -->
+                <div class="artista-card">
+
+                    <img src="img/artista2.jpg" alt="Dua Lipa">
+
+                    <h3>Dua Lipa</h3>
+                    <p>Pop y dance</p>
+
+                    <div class="info-concierto">
+                        <h4>Próximo concierto</h4>
+                        <p>Fecha: 18 de diciembre de 2026</p>
+                        <p>Lugar: Guadalajara, Jalisco</p>
+                        <p>Precio: $1,200 - $2,800 MXN</p>
+                    </div>
+
+                </div>
+
+                <!-- KATY PERRY -->
+                <div class="artista-card">
+
+                    <img src="img/artista3.jpg" alt="Katy Perry">
+
+                    <h3>Katy Perry</h3>
+                    <p>Pop</p>
+
+                    <div class="info-concierto">
+                        <h4>Próximo concierto</h4>
+                        <p>Fecha: 12 de diciembre de 2026</p>
+                        <p>Lugar: Festival Presidente</p>
+                        <p>Santo Domingo, República Dominicana</p>
+                        <p>Precios: RD$3,900 a RD$12,500</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ENTRADAS -->
+<section id="entradas">
+
+    <h2>Tipos de entradas</h2>
+
+    <div class="entradas-grid">
+
+        <div class="entrada-card">
+
+            <h3>Entrada Básica</h3>
+            <p class="precio">$1,800 MXN</p>
+
+            <ul>
+                <li>Acceso al festival</li>
+                <li>Conciertos principales</li>
+                <li>Área general</li>
+            </ul>
+
+            <button onclick="alert('Has seleccionado la Entrada Básica')">
+                Comprar
+            </button>
+
+        </div>
+
+        <div class="entrada-card destacada">
+
+            <h3>Entrada VIP</h3>
+            <p class="precio">$4,500 MXN</p>
+
+            <ul>
+                <li>Acceso VIP</li>
+                <li>Meet and greet</li>
+                <li>Área VIP</li>
+            </ul>
+
+            <button onclick="alert('Has seleccionado la Entrada VIP')">
+                Comprar
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+
+        <div class="footer-content">
+
+            <!-- CONTACTO -->
+            <div class="footer-section">
+
+                <h4>Contacto</h4>
+
+                <section class="contact container" id="contacto">
+
+                    <div class="contact-content">
+
+                        <h3>Contáctanos</h3>
+                        <h2>Déjanos tu opinión sobre el festival</h2>
+
+                        <form action="https://formspree.io/f/xnpjbyny"
+      method="POST">
+
+    <input type="hidden" name="_next" value="https://TU-SITIO.com/gracias.html">
+
+    <label for="email">Correo electrónico</label>
+    <input type="email"
+           id="email"
+           placeholder="Escribe tu correo"
+           name="email"
+           required>
+
+    <label for="calificacion">Calificación del servicio</label>
+
+    <select name="calificacion" id="calificacion" required>
+        <option value="">Selecciona una calificación</option>
+        <option value="Excelente">Excelente</option>
+        <option value="Muy bueno">Muy bueno</option>
+        <option value="Bueno">Bueno</option>
+        <option value="Regular">Regular</option>
+        <option value="Malo">Malo</option>
+    </select>
+
+    <label for="comentarios">Sugerencias o comentarios</label>
+
+    <textarea name="comentarios"
+              id="comentarios"
+              placeholder="Escribe tus sugerencias o comentarios"
+              rows="4"></textarea>
+
+    <input type="submit" class="btn-3" value="Enviar">
+
+</form>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <!-- REDES SOCIALES -->
+            <div class="footer-section">
+
+                <h4>Redes sociales de los artistas</h4>
+
+                <div class="social-links">
+
+                    <!-- LANA DEL REY -->
+                    <div class="red-artista">
+
+                        <p>Lana Del Rey</p>
+
+                        <a href="https://www.facebook.com/lanadelrey"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="img/facebook.png"
+                                 alt="Facebook">
+
+                        </a>
+
+                        <a href="https://www.instagram.com/lanadelrey/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="img/instagram.png"
+                                 class="footer__img"
+                                 alt="Instagram">
+
+                        </a>
+
+                    </div>
+
+                    <!-- DUA LIPA -->
+                    <div class="red-artista">
+
+                        <p>Dua Lipa</p>
+
+                        <a href="https://www.youtube.com/@dualipa"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="img/youtube.png"
+                                 class="footer__img"
+                                 alt="YouTube">
+
+                        </a>
+
+                        <a href="https://x.com/DUALIPA"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="img/gorjeo.png"
+                                 class="footer__img"
+                                 alt="X">
+
+                        </a>
+
+                    </div>
+
+                    <!-- KATY PERRY -->
+                    <div class="red-artista">
+
+                        <p>Katy Perry</p>
+
+                        <a href="https://www.tiktok.com/@katyperry"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="img/tik-tok.png"
+                                 class="footer__img"
+                                 alt="TikTok">
+
+                        </a>
+
+                        <a href="https://open.spotify.com/artist/6jJ0s89eD6GaHleKKya26X"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="img/spotify.png"
+                                 class="footer__img"
+                                 alt="Spotify">
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>2026 Festival de Verano - Tapia Terron Keira Briseida</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
